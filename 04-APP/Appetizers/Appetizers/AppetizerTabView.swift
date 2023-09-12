@@ -1,21 +1,27 @@
-//
-//  ContentView.swift
-//  Appetizers
-//
-//  Created by Lucas Inocencio on 12/09/23.
-//
-
 import SwiftUI
 
 struct AppetizerTabView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            AppetizersListView()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            
+            AccountView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Account")
+                }
+            
+            OrderView()
+                .tabItem {
+                    Image(systemName: "bag")
+                    Text("Order")
+                }
         }
-        .padding()
+        .accentColor(Color("brandPrimary"))
     }
 }
 

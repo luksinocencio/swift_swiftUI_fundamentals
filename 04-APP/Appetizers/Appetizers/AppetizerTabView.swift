@@ -1,6 +1,13 @@
+//
+//  ContentView.swift
+//  Appetizers
+//
+//  Created by Lucas Inocencio on 12/09/23.
+//
+
 import SwiftUI
 
-struct ContentView: View {
+struct AppetizerTabView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -14,6 +21,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AppetizerTabView()
     }
 }

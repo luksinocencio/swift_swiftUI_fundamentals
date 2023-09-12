@@ -19,6 +19,7 @@
 		E85A6C3D2AB0DA4F001105E8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A6C3C2AB0DA4F001105E8 /* NetworkManager.swift */; };
 		E85A6C3F2AB0DC8A001105E8 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A6C3E2AB0DC8A001105E8 /* APError.swift */; };
 		E85A6C412AB0E4B1001105E8 /* AppetizersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A6C402AB0E4B1001105E8 /* AppetizersListViewModel.swift */; };
+		E85A6C442AB0EB10001105E8 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A6C432AB0EB10001105E8 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		E85A6C3C2AB0DA4F001105E8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E85A6C3E2AB0DC8A001105E8 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		E85A6C402AB0E4B1001105E8 /* AppetizersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersListViewModel.swift; sourceTree = "<group>"; };
+		E85A6C432AB0EB10001105E8 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		E85A6C222AB0A436001105E8 /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
+				E85A6C422AB0EAFF001105E8 /* Utilities */,
 				E85A6C372AB0AA59001105E8 /* Model */,
 				E85A6C232AB0A436001105E8 /* AppetizersApp.swift */,
 				E85A6C252AB0A436001105E8 /* AppetizerTabView.swift */,
@@ -97,6 +100,14 @@
 				E85A6C382AB0AA6A001105E8 /* Appetizer.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E85A6C422AB0EAFF001105E8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E85A6C432AB0EB10001105E8 /* Alert.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 				E85A6C262AB0A436001105E8 /* AppetizerTabView.swift in Sources */,
 				E85A6C3D2AB0DA4F001105E8 /* NetworkManager.swift in Sources */,
 				E85A6C242AB0A436001105E8 /* AppetizersApp.swift in Sources */,
+				E85A6C442AB0EB10001105E8 /* Alert.swift in Sources */,
 				E85A6C322AB0A51D001105E8 /* AppetizersListView.swift in Sources */,
 				E85A6C362AB0A52E001105E8 /* OrderView.swift in Sources */,
 			);

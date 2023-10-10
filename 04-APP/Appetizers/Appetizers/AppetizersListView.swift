@@ -11,6 +11,7 @@ struct AppetizersListView: View {
             }
             .listStyle(.inset)
             .navigationTitle("🍟 Appetizers")
+            .scrollIndicators(.hidden)
         }
         .onAppear {
             viewModel.getAppetizers()

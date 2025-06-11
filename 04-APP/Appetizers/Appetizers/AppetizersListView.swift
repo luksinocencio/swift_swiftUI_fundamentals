@@ -3,18 +3,23 @@ import SwiftUI
 struct AppetizersListView: View {
     @StateObject var viewModel = AppetizersListViewModel()
     
-    
     var body: some View {
-        NavigationStack {
-            List(viewModel.appetizers) { appetizer in
-                AppetizerListCell(appetizer: appetizer)
+        ZStack {
+            NavigationView {
+                List(viewModel.appetizers) { appetizer in
+                    AppetizerListCell(appetizer: appetizer)
+                }
+                .listStyle(.inset)
+                .navigationTitle("🍟 Appetizers")
+                .scrollIndicators(.hidden)
             }
-            .listStyle(.inset)
-            .navigationTitle("🍟 Appetizers")
-            .scrollIndicators(.hidden)
-        }
-        .onAppear {
-            viewModel.getAppetizers()
+            .onAppear {
+                viewModel.getAppetizers()
+            }
+            
+            if viewModel.isLoading {
+                LoadingView()
+            }
         }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(
